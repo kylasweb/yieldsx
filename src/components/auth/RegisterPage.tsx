@@ -100,10 +100,8 @@ const RegisterPage = () => {
         throw error;
       }
 
-      // Simulate successful registration
-      setTimeout(() => {
-        navigate("/");
-      }, 1500);
+      // Successful registration - redirect to dashboard
+      navigate("/dashboard");
     } catch (error: any) {
       setErrors({
         ...errors,

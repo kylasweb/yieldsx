@@ -45,10 +45,8 @@ const LoginPage = () => {
         throw error;
       }
 
-      // Simulate successful login
-      setTimeout(() => {
-        navigate("/");
-      }, 1000);
+      // Successful login - redirect to dashboard
+      navigate("/dashboard");
     } catch (error: any) {
       setError(error.message || "Invalid email or password");
     } finally {
